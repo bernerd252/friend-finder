@@ -40,9 +40,9 @@ console.log(friendData)
        // for (var j = 0; j<friendScores.length; j++){
        // 		sum += parseInt( friendScores[i], 10 ); 
        // console.log(summ);
-       var totalDifference = sum - summ
+       var totalDifference = Math.abs(sum - summ)
        parseInt(totalDifference);
-       Math.abs(totalDifference);
+       // Math.abs(totalDifference);
        console.log(totalDifference)     
        
        if (totalDifference<possibleMatchScore){
@@ -52,7 +52,8 @@ console.log(friendData)
        }
 
    	}
+   	 friendData.push(newUser);
+
+   	 res.json(possibleMatch);
  });
 }
-	
-
